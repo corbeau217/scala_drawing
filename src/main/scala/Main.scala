@@ -100,3 +100,23 @@ class MyWindow extends JFrame {
 // ################################################################################
 // ################################################################################
 
+
+
+
+
+/**
+ * 
+ * 
+
+  def lerpf(a:Float,b:Float,t:Float):Float={
+    return (1 - t) * a + t * b;
+  }
+  def colorLerp(a:Color,b:Color,t:Float):Color={
+    new Color(
+      lerpf(a.getRed(),b.getRed(),t),
+      lerpf(a.getGreen(),b.getGreen(),t),
+      lerpf(a.getBlue(),b.getBlue(),t)
+    )
+  }
+  * 
+  */
