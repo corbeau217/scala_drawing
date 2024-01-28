@@ -41,14 +41,13 @@ class Stage(w:Int,h:Int) {
 
     // planets/moons
 
-    BodyLib.kerbin.paint( g,
-      widthCenter,
-      heightCenter
-    )
-
-    BodyLib.mun.paint( g,
-      (widthCenter + (ConstLib.scaleFactor * 12000.0)),
-      heightCenter
+    RefLib.celestialMasses.map(
+      (massElem) => {
+        massElem.paint( g,
+          widthCenter,
+          heightCenter
+        )
+      }
     )
   }
 

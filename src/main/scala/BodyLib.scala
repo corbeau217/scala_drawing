@@ -7,33 +7,40 @@ import java.awt.Color
 // ################################################################################
 // ################################################################################
 
-object BodyLib {
+object RefLib {
 
   // ###############################################################
   // ###############################################################
 
   // in kilometers using doubles
-
-  var kerbin = new CelestialBody(
-    // eq radius
-    600.0,
-    // soi radius
-    84159.288,
-    // synchronous orbit radius
-    2863.33,
-    // fill colour
-    Color.BLUE
-  )
-  
-  var mun = new CelestialBody(
-    // eq radius
-    200.0,
-    // soi radius
-    2429.5591,
-    // synchronous orbit radius
-    2970.56,
-    // fill colour
-    Color.GRAY
+  var celestialMasses = List(
+    // --------------------------------
+    new CelestialMass(
+      // name
+      "kerbin",
+      // eq radius
+      600.0,
+      // soi radius
+      84159.288,
+      // synchronous orbit radius
+      2863.33,
+      // fill colour
+      Color.BLUE
+    ),
+    // --------------------------------
+    new CelestialMass(
+      // name
+      "mun",
+      // eq radius
+      200.0,
+      // soi radius
+      2429.5591,
+      // synchronous orbit radius
+      2970.56,
+      // fill colour
+      Color.GRAY
+    )
+    // --------------------------------
   )
 
   // ###############################################################
